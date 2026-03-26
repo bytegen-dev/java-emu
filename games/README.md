@@ -1,7 +1,5 @@
-# Local game files (not in git)
+# Game `.jar` / `.jad` files
 
-Put **your own** `.jar` / `.jad` files here for **local testing**.
+Stored here for **local dev** and **served** during **`npm run dev`** / **`npm run preview`** at **`/games/<filename>`**.
 
-- Files in this folder are **ignored by git** (see root `.gitignore`) so you don’t accidentally publish commercial ROMs.
-- During **`npm run dev`** and **`npm run preview`**, they are served at **`/games/<filename>`** (e.g. `/games/MyGame.jar`).
-- For **production builds**, copy anything you have the **rights** to ship into `public/games/` (or your CDN) so `vite build` can serve them.
+You may keep this folder **in or out of git** depending on your rights to redistribute the files. For **production**, only ship assets you have permission to distribute (e.g. also copy into `public/games/` if needed for static hosting).
