@@ -1,0 +1,277 @@
+.app {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.tabs button {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  opacity: 0.9;
+}
+
+.tabs button.active {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 18%, var(--panel));
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-frame {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.phone-bezel {
+  background: linear-gradient(145deg, #1a1d24, #0f1115);
+  border-radius: 1.5rem;
+  padding: 0.75rem;
+  box-shadow:
+    0 0 0 1px #2a2f3a,
+    0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.phone-earpiece {
+  height: 4px;
+  width: 40%;
+  margin: 0.25rem auto 0.6rem;
+  background: #111;
+  border-radius: 999px;
+  opacity: 0.7;
+}
+
+.phone-screen {
+  background: var(--panel);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.phone-status {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.75rem;
+  background: #111318;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.phone-content {
+  padding: 0.75rem;
+  min-height: 12rem;
+}
+
+.phone-keys {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.6rem 0 0.25rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+.phone-keys .key.soft {
+  opacity: 0.5;
+}
+
+.jar-inspector .file-label,
+.cheerpj-runner .file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.jar-inspector .file-label input,
+.file-label.inline input {
+  display: none;
+}
+
+.jar-inspector .file-label span,
+.file-label.inline span {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background: var(--accent);
+  color: #0a0b0f;
+  border-radius: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.inspect-result {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.inspect-result .midlet.yes {
+  color: #7dd3a0;
+}
+
+.inspect-result .midlet.no {
+  color: var(--muted);
+}
+
+.kv {
+  margin: 0.25rem 0 0;
+  padding-left: 1rem;
+}
+
+.kv code {
+  font-size: 0.7rem;
+}
+
+.manifest-raw {
+  font-size: 0.65rem;
+  max-height: 12rem;
+  overflow: auto;
+  background: #0c0d11;
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+  border: 1px solid var(--border);
+}
+
+.cheerpj-runner .hint {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0 0 0.75rem;
+}
+
+.runner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.runner-actions button {
+  border: 1px solid var(--border);
+  background: #16181f;
+  color: var(--text);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.45rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.runner-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cheerpj-host {
+  margin-top: 0.75rem;
+  min-height: 420px;
+  background: #0a0b0f;
+  border-radius: 0.45rem;
+  border: 1px dashed var(--border);
+  overflow: auto;
+}
+
+.cheerpj-host:empty::after {
+  content: 'CheerpJ output appears here…';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.msg {
+  font-size: 0.85rem;
+  margin: 0.35rem 0 0;
+}
+
+.msg.err {
+  color: #f87171;
+}
+
+.foot {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.freej2me-embed {
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.freej2me-embed .hint.keys {
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+}
+
+.freej2me-embed kbd {
+  font-family: ui-monospace, monospace;
+  font-size: 0.75em;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  background: #0c0d11;
+}
+
+.iframe-wrap {
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #0a0b0f;
+  min-height: min(72vh, 640px);
+}
+
+.freej2me-iframe {
+  display: block;
+  width: 100%;
+  height: min(72vh, 640px);
+  border: none;
+  background: #eee;
+}
+
+.freej2me-embed .fallback {
+  margin: 0.65rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.freej2me-embed .fallback a {
+  color: var(--accent);
+}
