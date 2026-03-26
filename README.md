@@ -12,6 +12,10 @@ npm run dev
 
 Open the printed localhost URL (must be **http(s)**, not `file://` — CheerpJ requirement).
 
+### `games/` folder
+
+Drop **local** `.jar` / `.jad` files in [`games/`](games/) (see [`games/README.md`](games/README.md)). They are **gitignored** so you don’t commit third-party games. With **`npm run dev`** or **`npm run preview`**, each file is available at **`/games/<filename>`** (handy for links or tooling). For **production**, only ship assets you have rights to use (e.g. copy into `public/games/`).
+
 ## Tabs
 
 | Tab | What it does |
